@@ -845,7 +845,6 @@ h1 {
     
 
 }
-/* Corrige o título Feliz Aniversário no celular */
 /* CORREÇÃO DEFINITIVA DO TÍTULO NO CELULAR */
 @media screen and (max-width: 658px) {
     .content .left {
