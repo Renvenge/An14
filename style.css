@@ -845,3 +845,44 @@ h1 {
     
 
 }
+/* Corrige o título Feliz Aniversário no celular */
+@media screen and (max-width: 658px) {
+    .content .left {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        min-width: 0;
+    }
+
+    .title {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(1.2rem, 6.5vw, 2rem);
+        letter-spacing: 0;
+    }
+
+    .title .happy,
+    .title .birthday {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        white-space: nowrap;
+        letter-spacing: 0;
+        gap: 0;
+    }
+
+    .title .happy span,
+    .title .birthday span {
+        text-shadow:
+            2px 2px #333,
+            -2px 2px #333,
+            2px -2px #333,
+            -2px -2px #333,
+            2px 4px 0 #333;
+    }
+
+    .title .hat {
+        right: 0;
+    }
+}
