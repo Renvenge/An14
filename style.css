@@ -845,47 +845,41 @@ h1 {
     
 
 }
-/* CORREÇÃO DEFINITIVA DO TÍTULO NO CELULAR */
+
+/* Ajuste do título no celular sem diminuir demais as letras */
 @media screen and (max-width: 658px) {
     .content .left {
         width: 100% !important;
-        min-width: 0 !important;
         max-width: 100% !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        overflow: visible !important;
+        min-width: 0 !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        box-sizing: border-box !important;
     }
 
     .content .left .title {
         width: 100% !important;
         max-width: 100% !important;
-        font-size: clamp(12px, 5vw, 24px) !important;
+        font-size: clamp(24px, 7.5vw, 36px) !important;
         letter-spacing: 0 !important;
-        overflow: visible !important;
+        box-sizing: border-box !important;
     }
 
     .content .left .title h1 {
-        display: flex !important;
         width: 100% !important;
         max-width: 100% !important;
         justify-content: center !important;
         white-space: nowrap !important;
-        letter-spacing: 0 !important;
         font-size: 1em !important;
-        padding: 0 !important;
+        letter-spacing: 0 !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
     }
 
     .content .left .title h1 span {
-        flex-shrink: 1 !important;
-        min-width: 0 !important;
         letter-spacing: 0 !important;
-        text-shadow:
-            2px 2px #333,
-            -2px 2px #333,
-            2px -2px #333,
-            -2px -2px #333,
-            2px 4px #333 !important;
+        min-width: 0 !important;
     }
 }
