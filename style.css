@@ -846,40 +846,44 @@ h1 {
 
 }
 
-/* Ajuste do título no celular sem diminuir demais as letras */
+/* Corrige o título Feliz Aniversário no celular */
 @media screen and (max-width: 658px) {
     .content .left {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: 0 !important;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-        box-sizing: border-box !important;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        min-width: 0;
     }
 
-    .content .left .title {
-        width: 100% !important;
-        max-width: 100% !important;
-        font-size: clamp(24px, 7.5vw, 36px) !important;
-        letter-spacing: 0 !important;
-        box-sizing: border-box !important;
+    .title {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(1.2rem, 6.5vw, 2rem);
+        letter-spacing: 0;
     }
 
-    .content .left .title h1 {
-        width: 100% !important;
-        max-width: 100% !important;
-        justify-content: center !important;
-        white-space: nowrap !important;
-        font-size: 1em !important;
-        letter-spacing: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding: 0 !important;
-        box-sizing: border-box !important;
+    .title .happy,
+    .title .birthday {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        white-space: nowrap;
+        letter-spacing: 0;
+        gap: 0;
     }
 
-    .content .left .title h1 span {
-        letter-spacing: 0 !important;
-        min-width: 0 !important;
+    .title .happy span,
+    .title .birthday span {
+        text-shadow:
+            2px 2px #333,
+            -2px 2px #333,
+            2px -2px #333,
+            -2px -2px #333,
+            2px 4px 0 #333;
+    }
+
+    .title .hat {
+        right: 0;
     }
 }
