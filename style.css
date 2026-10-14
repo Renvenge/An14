@@ -887,3 +887,16 @@ h1 {
         right: 0;
     }
 }
+
+.circle-text,
+.circle-text span {
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+.circle-text span:first-child {
+    transform-origin: center;
+    display: inline-block;
+}
+
